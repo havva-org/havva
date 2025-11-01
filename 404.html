@@ -2,6 +2,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Not Found — Havva.org</title><meta name="description" content="Custom 404 with helpful links. to education, income, health, justice, civic voice, and innovation.">
 <link rel="preload" href="/assets/css/styles.css" as="style">
+<script>
+/* v01.1: set theme before CSS loads */
+(function () {
+  var t = localStorage.getItem('havva_theme');
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light';
+  document.documentElement.classList.add('js');
+  document.body ? document.body.classList.add(t) : document.write('<body class="'+t+'">');
+})();
+</script>
+
 <link rel="preload" href="/assets/img/havva-org-logo-black.png" as="image">
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="canonical" href="https://www.havva.org/index.html">

@@ -2,6 +2,16 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Blog — Havva.org</title><meta name="description" content="Havva learning posts.">
 <link rel="preload" href="/assets/css/styles.css" as="style">
+<script>
+/* v01.1: set theme before CSS loads */
+(function () {
+  var t = localStorage.getItem('havva_theme');
+  if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'theme-dark' : 'theme-light';
+  document.documentElement.classList.add('js');
+  document.body ? document.body.classList.add(t) : document.write('<body class="'+t+'">');
+})();
+</script>
+
 <link rel="preload" href="/assets/img/havva-org-logo-black.png" as="image">
 <link rel="stylesheet" href="/assets/css/styles.css">
 <link rel="canonical" href="https://www.havva.org/blog/index.html">
@@ -47,5 +57,5 @@
 <nav class="nav" role="navigation" aria-label="Primary Navigation">
 <a href="/index.html">Home</a><a href="/about.html">About</a><a href="/programs.html">Programs</a><a href="/impact.html">Impact</a><a href="/stories.html">Stories</a><a href="/donate.html" class="btn">Donate</a><a href="/contact.html">Contact</a><a href="/blog/index.html">Blog</a><a href="/testimonials.html">Testimonials</a><a href="/case-studies.html">Case Studies</a><a href="/insights/wef-2025.html">Insights</a>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">Light ▸ Dark</button></nav></div></header><main class="main container"><section class='hero'><h1>Blog</h1></section><ul class='blog-list'><li><a href='/blog/posts/2025-IND-women-in-tech.html'>India: Women in Tech</a></li><li><a href='/blog/posts/2025-EGY-financial-inclusion.html'>Egypt: Financial Inclusion</a></li><li><a href='/blog/posts/2025-KEN-education-access.html'>Kenya: Education Access</a></li></ul><script defer src="/assets/js/blog-index.js"></script>
-</main><footer class="site-footer"><div class="container"><p>© 2025 Havva.org • Built for GitHub Pages + Cloudflare <span data-badge-cf>· Analytics active</span> • v01 • 2025-11-01T14:07:29Z</p></div></footer>
+</main><footer class="site-footer"><div class="container"><p>© 2025 Havva.org • Built for GitHub Pages + Cloudflare <span data-badge-cf>· Analytics active</span> • v01.1 • 2025-11-01T14:07:29Z</p></div></footer>
 <script defer src="/assets/js/main.js"></script></body></html>
