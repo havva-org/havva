@@ -1,0 +1,28 @@
+:root{--primary:#000;--accent:#F4C430;--bg:#F8F1E9;--text:#222}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+.site-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.brand img{width:auto;height:32px;vertical-align:middle}
+.nav a{margin:0 .5rem;text-decoration:none;color:#222}
+.nav .btn{background:#000;color:#fff;padding:.45rem .9rem;border-radius:9999px}
+.hero{padding:3rem 0}
+.hero h1{font-family:Georgia,'Times New Roman',serif;color:#000;font-size:2.2rem;margin:.2rem 0}
+.card{background:#fff;border:1px solid #eee;border-radius:12px;padding:1rem;margin:1rem 0}
+.grid{display:grid;gap:1rem}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.pillars{width:100%;border-collapse:collapse}
+.pillars th,.pillars td{border:1px solid #e6e6e6;padding:.6rem;vertical-align:top}
+.site-footer{margin-top:3rem;background:#111;color:#fff}
+.site-footer a{color:#fff;text-decoration:underline}
+small.muted{opacity:.7}
+.blog-list li{margin:.4rem 0}
+#ctaSticky{position:fixed;left:0;right:0;bottom:-80px;background:#0a0a0a;color:#fff;box-shadow:0 -4px 20px rgba(0,0,0,.2);transition:bottom .3s ease;z-index:999}
+#ctaSticky.show{bottom:0}
+#ctaSticky .wrap{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}
+#ctaSticky a{background:#fff;color:#111;padding:8px 14px;border-radius:9999px;text-decoration:none;border:1px solid #ddd}
+.theme-toggle{margin-left:auto;border:1px solid #ddd;border-radius:9999px;padding:.35rem .7rem;background:#fff;cursor:pointer;font-size:.9rem}
+.theme-dark .theme-toggle{background:#111;color:#fff;border-color:#333}
+.theme-dark .logo .logo--light{display:inline}.theme-dark .logo .logo--dark{display:none}
+.theme-light .logo .logo--light{display:none}.theme-light .logo .logo--dark{display:inline}

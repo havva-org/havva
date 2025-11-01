@@ -1,0 +1,22 @@
+{
+  "updated": "2025-11-01T14:11:09Z",
+  "code": "IND",
+  "series": [
+    {
+      "code": "LFPR_FEMALE",
+      "value": 32.8
+    },
+    {
+      "code": "EMP_POP_FEMALE",
+      "value": 28.2
+    },
+    {
+      "code": "UNEMP_FEMALE",
+      "value": 4.8
+    },
+    {
+      "code": "TERTIARY_COMPLETE_F",
+      "value": 9.4
+    }
+  ]
+}

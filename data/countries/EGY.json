@@ -1,0 +1,22 @@
+{
+  "updated": "2025-11-01T14:11:09Z",
+  "code": "EGY",
+  "series": [
+    {
+      "code": "LFPR_FEMALE",
+      "value": 14.2
+    },
+    {
+      "code": "EMP_POP_FEMALE",
+      "value": 12.1
+    },
+    {
+      "code": "UNEMP_FEMALE",
+      "value": 21.3
+    },
+    {
+      "code": "TERTIARY_COMPLETE_F",
+      "value": 10.8
+    }
+  ]
+}

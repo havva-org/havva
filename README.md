@@ -1,58 +1,23 @@
-# 🌍 Havva.org  
-Empowering women worldwide through data-driven impact, storytelling, and transparency.  
+# Havva.org — v01
+One-push GitHub Pages + Cloudflare bundle.
 
----
+Deployed: 2025-11-01T14:07:29Z
 
-## ✳️ Overview
-**Havva.org** is a global initiative for women’s empowerment — connecting education, income, health, justice, civic voice, and innovation.  
-This repository hosts the **production-ready static website**, built for **speed, transparency, and scalability** using **GitHub Pages + Cloudflare**.  
+## v36 additions (2025-11-01T14:11:09Z)
+- Self‑hosted charts (`assets/vendor/charts.min.js`) and `impact-charts.js`.
+- Global compare on `/impact.html` and country microsites `/impact/IND|EGY|KEN/`.
+- CSV + PNG exports.
+- Data seeds in `/data/` (replace with World Bank pulls later).
 
-The current version (**v31**) integrates refined branding, enriched content, and a one-push deployment pipeline.  
 
----
+- Added **Insights** pages: WEF 2025, OECD 2025 Gender, Beijing+30.
+- Added **Case Studies** and **Testimonials** pages.
+- Auto **Blog index** sourced from `sitemap.xml` (client-side).
+- Updated email to **connect@havva.org** everywhere; added Istanbul address.
+- JSON-LD (**NGO**) injected on pages for rich SEO.
+- CI: **AJV** schema validation for `/data/global_metrics.json` and a simple internal link checker.
+- Custom **404.html**.
 
-## 🚀 Architecture
-- **Static site (no framework)** → lives inside `/site/`  
-- **Hosting:** GitHub Pages (main branch, root directory)  
-- **Proxy/CDN:** Cloudflare (Full-Strict SSL, caching, security)  
-- **Language:** Pure HTML, CSS, JS — lightweight, no build step  
-- **Performance:** Lighthouse ≥ 95, fully CSP/SRI compliant  
 
----
-
-## 🧩 Key Features
-| Category | Highlights |
-|-----------|-------------|
-| 💠 **Content** | Mission, vision, pillars, data dictionary, donor stories, and impact pages |
-| 📊 **Transparency** | Open metrics with global vs. country comparisons |
-| 🎨 **Design** | Terracotta & Sage palette, soft serif/sans typography |
-| 🔒 **Security & Perf** | CSP, SRI, minified assets, long-cache headers |
-| 📢 **Engagement** | Sticky CTA bar, newsletter route, micro-brief blog index |
-| 🌐 **International Reach** | Initial focus: India 🇮🇳 · Egypt 🇪🇬 · Kenya 🇰🇪 |
-| 🧾 **Donor UX** | Prefilled email CTAs, printable one-pager, impact calculator (future) |
-
----
-
-## 🗂️ Folder Structure
-```plaintext
-havva/
-├── site/
-│   ├── index.html
-│   ├── about.html
-│   ├── programs.html
-│   ├── impact.html
-│   ├── stories.html
-│   ├── donate.html
-│   ├── contact.html
-│   ├── data-dictionary.html
-│   ├── sitemap.xml
-│   ├── robots.txt
-│   └── assets/
-│       ├── css/
-│       │   └── styles.css
-│       └── js/
-│           └── cta-sticky.js
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
-└── README.md
+## v01 (2025-11-01T14:22:32Z)
+Baseline release (renamed from v37). Includes insights, case studies, testimonials, impact charts + CSV/PNG, auto blog index, CI schema & link checks, CF analytics + Turnstile.

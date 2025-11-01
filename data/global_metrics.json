@@ -1,0 +1,41 @@
+{
+  "updated": "2025-11-01T14:11:09Z",
+  "series": [
+    {
+      "code": "LFPR_FEMALE",
+      "name": "Labor Force Participation (female, %)",
+      "unit": "%",
+      "wld": 48.5,
+      "IND": 32.8,
+      "EGY": 14.2,
+      "KEN": 57.3
+    },
+    {
+      "code": "EMP_POP_FEMALE",
+      "name": "Employment-to-Population (female, %)",
+      "unit": "%",
+      "wld": 43.9,
+      "IND": 28.2,
+      "EGY": 12.1,
+      "KEN": 52.6
+    },
+    {
+      "code": "UNEMP_FEMALE",
+      "name": "Unemployment (female, %)",
+      "unit": "%",
+      "wld": 6.1,
+      "IND": 4.8,
+      "EGY": 21.3,
+      "KEN": 5.3
+    },
+    {
+      "code": "TERTIARY_COMPLETE_F",
+      "name": "Tertiary Completion, women 25+ (%)",
+      "unit": "%",
+      "wld": 12.7,
+      "IND": 9.4,
+      "EGY": 10.8,
+      "KEN": 8.1
+    }
+  ]
+}
